@@ -113,10 +113,6 @@ const data = [
 
 */
 
-class Article {
-  constructor(article, title, date, firstParagraph, secondParagraph, thirdParagraph) {}
-}
-
 const createArticle = () => {
   const insertArticle = document.querySelector(".articles");
   const newArticle = document.createElement("div");
@@ -129,6 +125,9 @@ const createArticle = () => {
 
   newArticle.classList.add("article");
   newDate.classList.add("date");
+  newParagraph1.classList.add("p1");
+  newParagraph2.classList.add("p2");
+  newParagraph3.classList.add("p3");
   button.classList.add("expandButton");
 
   insertArticle.appendChild(newArticle);
@@ -142,6 +141,41 @@ const createArticle = () => {
   return newArticle;
 };
 
-data.map(() => {
-  const newArticle = new Article(createArticle(), data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph);
+class Article {
+  constructor(article, title, date, firstParagraph, secondParagraph, thirdParagraph) {
+    this.article = document.querySelector(".article");
+    this.title = article.querySelector("h2");
+    this.date = article.querySelector(".date");
+    this.paragraphOne = article.querySelector(".p1");
+    this.paragraphTwo = article.querySelector(".p2");
+    this.paragraphThree = article.querySelector(".p3");
+    this.expandBtn = article.querySelector(".expandButton");
+
+    this.title.textContent = title;
+    this.date.textContent = date;
+    this.paragraphOne.textContent = firstParagraph;
+    this.paragraphTwo.textContent = secondParagraph;
+    this.paragraphThree.textContent = thirdParagraph;
+    this.expandBtn.textContent = "expand";
+
+    this.open = false;
+    this.expandBtn.addEventListener("click", () => this.expandArticle());
+  }
+  button() {
+    this.open = !this.open;
+    if (!this.open) {
+      this.expandBtn.textContent = "expand";
+    } else {
+      this.expandBtn.textContent = "close";
+    }
+  }
+  expandArticle() {
+    this.button();
+    this.article.classList.toggle("article-open");
+    console.log("click");
+  }
+}
+
+data.map(article => {
+  const newArticle = new Article(createArticle(), article.title, article.date, article.firstParagraph, article.secondParagraph, article.thirdParagraph);
 });
