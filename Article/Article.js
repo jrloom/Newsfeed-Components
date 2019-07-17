@@ -202,10 +202,8 @@ const data = [
 // ok. forget the class. forget .map(). just doing a function and using .forEach().
 //
 //
-let articles = document.querySelector(".articles");
-data.forEach(data => articles.appendChild(article(data)));
 
-function article(data) {
+const article = data => {
   const container = document.createElement("div");
   const title = document.createElement("h2");
   const date = document.createElement("p");
@@ -239,4 +237,7 @@ function article(data) {
   });
 
   return container;
-}
+};
+
+let articles = document.querySelector(".articles");
+data.forEach(data => articles.appendChild(article(data)));
