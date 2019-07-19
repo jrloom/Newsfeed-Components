@@ -3,7 +3,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -23,8 +23,8 @@ const data = [
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -43,8 +43,8 @@ const data = [
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -71,8 +71,8 @@ const data = [
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -85,6 +85,24 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "Fry Day",
+    date: "July 16, 2019",
+    firstParagraph: `Bender?! You stole the atom. Throw her in the brig. No! I want to live! There are still too many things I don't own! Well, thanks to the Internet, I'm now bored with sex. Is there a place on the web that panders to my lust for violence?`,
+
+    secondParagraph: `Hello, little man. I will destroy you! WINDMILLS DO NOT WORK THAT WAY! GOOD NIGHT! And why did 'I' have to take a cab? Oh yeah, good luck with that. Bender, we're trying our best. For example, if you killed your grandfather, you'd cease to exist!`,
+
+    thirdParagraph: `No, I'm Santa Claus! I wish! It's a nickel. I found what I need. And it's not friends, it's things. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.`
+  },
+  {
+    title: "Something Different",
+    date: "July 16, 2019",
+    firstParagraph: `Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.`,
+
+    secondParagraph: `In 1945, peace broke out. It was the end of the Joke. Joke warfare was banned at a special session of the Geneva Convention, and in 1950 the last remaining copy of the joke was laid to rest here in the Berkshire countryside, never to be told again.`,
+
+    thirdParagraph: `This morning, shortly after 11:00, comedy struck this little house on Dibley Road. Sudden, violent comedy. You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. We interrupt this program to annoy you and make things generally irritating.`
   }
 ];
 
@@ -112,3 +130,114 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
 
 */
+// class Article {
+//   constructor(article, title, date, firstParagraph, secondParagraph, thirdParagraph) {
+//     this.container = article.querySelector(".article");
+//     console.log(this.container);
+//     this.title = article.querySelector("h2");
+//     this.date = article.querySelector(".date");
+//     this.paragraphOne = article.querySelector(".p1");
+//     this.paragraphTwo = article.querySelector(".p2");
+//     this.paragraphThree = article.querySelector(".p3");
+//     this.expandBtn = article.querySelector(".expandButton");
+
+//     this.title.textContent = title;
+//     this.date.textContent = date;
+//     this.paragraphOne.textContent = firstParagraph;
+//     this.paragraphTwo.textContent = secondParagraph;
+//     this.paragraphThree.textContent = thirdParagraph;
+//     this.expandBtn.textContent = "expand";
+
+//     this.open = false;
+//     this.expandBtn.addEventListener("click", () => this.expandArticle());
+//   }
+//   button() {
+//     this.open = !this.open;
+//     if (!this.open) {
+//       this.expandBtn.textContent = "expand";
+//     } else {
+//       this.expandBtn.textContent = "close";
+//     }
+//   }
+//   expandArticle() {
+//     this.button();
+//     this.container.classList.toggle("article-open");
+//     console.log("click");
+//   }
+// }
+
+// const createArticle = () => {
+//   const insertArticle = document.querySelector(".articles");
+//   const container = document.createElement("div");
+//   const title = document.createElement("h2");
+//   const date = document.createElement("p");
+//   const paragraph1 = document.createElement("p");
+//   const paragraph2 = document.createElement("p");
+//   const paragraph3 = document.createElement("p");
+//   const button = document.createElement("span");
+
+//   container.classList.add("article");
+//   date.classList.add("date");
+//   paragraph1.classList.add("p1");
+//   paragraph2.classList.add("p2");
+//   paragraph3.classList.add("p3");
+//   button.classList.add("expandButton");
+
+//   insertArticle.appendChild(article);
+//   container.appendChild(title);
+//   container.appendChild(date);
+//   container.appendChild(paragraph1);
+//   container.appendChild(paragraph2);
+//   container.appendChild(paragraph3);
+//   container.appendChild(button);
+
+//   return container;
+// };
+
+// data.map(article => {
+//   const newArticle = new Article(createArticle(), article.title, article.date, article.firstParagraph, article.secondParagraph, article.thirdParagraph);
+// });
+//
+// can't seem to get .article into the class. currently returns a null error.
+// ok. forget the class. forget .map(). just doing a function and using .forEach().
+//
+//
+
+const article = data => {
+  const container = document.createElement("div");
+  const title = document.createElement("h2");
+  const date = document.createElement("p");
+  const paragraph1 = document.createElement("p");
+  const paragraph2 = document.createElement("p");
+  const paragraph3 = document.createElement("p");
+  const btn = document.createElement("span");
+
+  container.appendChild(title);
+  container.appendChild(date);
+  container.appendChild(paragraph1);
+  container.appendChild(paragraph2);
+  container.appendChild(paragraph3);
+  container.appendChild(btn);
+
+  container.classList.add("article");
+  date.classList.add("date");
+  btn.classList.add("expandButton");
+
+  title.textContent = data.title;
+  date.textContent = data.date;
+  paragraph1.textContent = data.firstParagraph;
+  paragraph2.textContent = data.secondParagraph;
+  paragraph3.textContent = data.thirdParagraph;
+  btn.textContent = "open";
+
+  btn.addEventListener("click", () => {
+    container.classList.toggle("article-open");
+    open = !open;
+    !open ? (btn.textContent = "close") : (btn.textContent = "open");
+  });
+
+  return container;
+};
+
+let articles = document.querySelector(".articles");
+data.forEach(data => articles.appendChild(article(data)));
